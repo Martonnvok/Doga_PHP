@@ -12,7 +12,6 @@ class Users extends Model
     protected $primaryKey = 'id'; 
 
     protected $fillable = [ 
-        'id',
         'name', 
         'email', 
         'sex', 

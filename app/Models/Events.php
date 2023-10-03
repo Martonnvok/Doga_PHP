@@ -11,7 +11,6 @@ class Events extends Model
     protected $primaryKey = 'event_id'; 
 
     protected $fillable = [ 
-        'event_id',
         'date', 
         'location', 
         'org_id', 

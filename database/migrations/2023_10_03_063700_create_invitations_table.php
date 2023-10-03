@@ -17,6 +17,9 @@ return new class extends Migration
             $table->boolean('appeared')->default(0);
             $table->integer('user_id');
             $table->integer('event_id');
+            //$table->foreignId('user_id')->references('id')->on('users');
+            //$table->foreignId('event_id')->references('id')->on('users');
+            //$table->foreignId('invitation_id')->references('id')->on('users');
             $table->timestamps();
         });
 
@@ -24,6 +27,20 @@ return new class extends Migration
             'appeared' => true ,
             'user_id' => 1,
             'event_id' => 1
+
+        ]); 
+
+        Invitation::create([ 
+            'appeared' => true ,
+            'user_id' => 2,
+            'event_id' => 2
+
+        ]); 
+
+        Invitation::create([ 
+            'appeared' => true ,
+            'user_id' => 3,
+            'event_id' => 3
 
         ]); 
     }

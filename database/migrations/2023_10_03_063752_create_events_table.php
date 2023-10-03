@@ -22,8 +22,22 @@ return new class extends Migration
 
         Events::create([ 
             'date' => '2000-01-01' ,
-            'location' => "Budapes",
+            'location' => "Budapest",
             'org_id' => 1
+
+        ]); 
+
+        Events::create([ 
+            'date' => '2000-01-02' ,
+            'location' => "Győr",
+            'org_id' => 2
+
+        ]); 
+
+        Events::create([ 
+            'date' => '2000-01-03' ,
+            'location' => "Somogyvár",
+            'org_id' => 3
 
         ]); 
     }

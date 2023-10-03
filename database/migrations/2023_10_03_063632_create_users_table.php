@@ -18,11 +18,25 @@ return new class extends Migration
             $table-> String('email');
             $table-> String('sex');
             $table->timestamps();
+            
+
         });
 
         Users::create([ 
             'name' =>'Evelin', 
             'email' => 'evelin@gmail.com',  
+            'sex' =>'girl' 
+
+        ]); 
+        Users::create([ 
+            'name' =>'Kati', 
+            'email' => 'Kata@gmail.com',  
+            'sex' =>'girl' 
+
+        ]); 
+        Users::create([ 
+            'name' =>'Józsi', 
+            'email' => 'jozsi@gmail.com',  
             'sex' =>'girl' 
 
         ]); 

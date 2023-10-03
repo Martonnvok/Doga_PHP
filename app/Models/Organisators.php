@@ -11,7 +11,6 @@ class Organisators extends Model
     protected $primaryKey = 'org_id'; 
 
     protected $fillable = [ 
-        'org_id',
         'name', 
         'description', 
 

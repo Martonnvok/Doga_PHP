@@ -12,7 +12,6 @@ class Invitation extends Model
     protected $primaryKey = 'invitation_id'; 
 
     protected $fillable = [ 
-        'invitation_id',
         'appeared', 
         'user_id', 
         'event_id', 
